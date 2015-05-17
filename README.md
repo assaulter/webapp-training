@@ -7,7 +7,7 @@
 プログラミング言語としてはRubyを使用。
 
 比較的軽量で、最初は余計なものがあまりついていないSinatra（Web Framework）を用いてTodoアプリケーションを作成する。
- 
+
 あくまで体験なので、Rubyその他については詳しくやりません。
 
 (ぶっちゃけSinatraとActiveRecordほとんど使ったこと無いので、一緒に勉強しましょう！)
@@ -49,7 +49,7 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 4. [TwitterBootstrapおよびバリデーションの導入](https://133.208.22.231/newbies/create-web-app/tree/level2/refactor_activerecord)
 5. [Todoアプリケーションの改修](https://www.biglobe.net/pages/viewpage.action?pageId=20035660)
 
-番外編：デモ振り返りプランニングに参加してもらう？
+番外編：オフィスめがねチームのデモに参加してもらう？
 
 
 ## 参考文献
@@ -65,7 +65,7 @@ Sinatraである程度やった後に見ることをオススメします。便�
 
 ### 他社のプログラミング研修(勉強になります)
 
-[mixi-inc. RubyTraining](https://github.com/mixi-inc/RubyTraining) 
+[mixi-inc. RubyTraining](https://github.com/mixi-inc/RubyTraining)
 もうちょっと深い所をやっています。
 
 [mixi-inc. JavaScriptTraining](https://github.com/mixi-inc/JavaScriptTraining)
