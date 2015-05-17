@@ -46,7 +46,8 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 1. [Hello, World!](https://133.208.22.231/newbies/create-web-app/tree/level1/helloworld)
 2. [画面にプログラムから情報を渡す](https://133.208.22.231/newbies/create-web-app/tree/level1/useslim)
 3. [Todoアプリケーションの作成](https://133.208.22.231/newbies/create-web-app/tree/level2/activerecord)
-4. [Todoアプリケーションの改修](https://www.biglobe.net/pages/viewpage.action?pageId=20035660)
+4. [TwitterBootstrapおよびバリデーションの導入](https://133.208.22.231/newbies/create-web-app/tree/level2/refactor_activerecord)
+5. [Todoアプリケーションの改修](https://www.biglobe.net/pages/viewpage.action?pageId=20035660)
 
 番外編：デモ振り返りプランニングに参加してもらう？
 
