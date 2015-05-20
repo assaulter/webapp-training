@@ -69,7 +69,7 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 3. [ActiveRecordを使ったDBの作成](https://github.com/assaulter/webapp-training/tree/level1/activerecord_settings)
 4. [Todoアプリケーションの作成](https://github.com/assaulter/webapp-training/tree/level2/activerecord)
 5. [TwitterBootstrapおよびバリデーションの導入](https://github.com/assaulter/webapp-training/tree/level2/refactor_activerecord)
-6. [Todoアプリケーションの改修]()
+6. [Todoアプリケーションの改修](https://github.com/assaulter/webapp-training/blob/master/TASKS.md)
 
 番外編：
 スクラム開発体験
