@@ -69,7 +69,6 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 3. [ActiveRecordを使ったDBの作成](https://133.208.22.231/newbies/migration_sample)
 4. [Todoアプリケーションの作成](https://133.208.22.231/newbies/create-web-app/tree/level2/activerecord)
 5. [TwitterBootstrapおよびバリデーションの導入](https://133.208.22.231/newbies/create-web-app/tree/level2/refactor_activerecord)
-6. [Todoアプリケーションの改修](https://www.biglobe.net/pages/viewpage.action?pageId=20035660)
 
 番外編：オフィスめがねチームのデモに参加してもらう？
 
