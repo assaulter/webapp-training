@@ -64,14 +64,17 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 * 煮詰まったら相談（僕でもいいし、互いに教え合ってもいいです）
 
 ## カリキュラム目次
-1. [Hello, World!](https://133.208.22.231/newbies/create-web-app/tree/level1/helloworld)
+1. [Hello, World!](https://github.com/assaulter/webapp-training/tree/level1/helloworld)
 2. [画面にプログラムから情報を渡す](https://133.208.22.231/newbies/create-web-app/tree/level1/useslim)
-3. [ActiveRecordを使ったDBの作成](https://133.208.22.231/newbies/migration_sample)
-4. [Todoアプリケーションの作成](https://133.208.22.231/newbies/create-web-app/tree/level2/activerecord)
-5. [TwitterBootstrapおよびバリデーションの導入](https://133.208.22.231/newbies/create-web-app/tree/level2/refactor_activerecord)
-6. [Todoアプリケーションの改修](https://www.biglobe.net/pages/viewpage.action?pageId=20035660)
+3. [ActiveRecordを使ったDBの作成]()
+4. [Todoアプリケーションの作成](https://github.com/assaulter/webapp-training/tree/level2/activerecord)
+5. [TwitterBootstrapおよびバリデーションの導入](https://github.com/assaulter/webapp-training/tree/level2/refactor_activerecord)
+6. [Todoアプリケーションの改修]()
 
-番外編：オフィスめがねチームのデモに参加してもらう？
+番外編：
+スクラム開発体験
+
+デモ、ふりかえり、プランニングに参加してもらう。
 
 
 ## 参考文献
