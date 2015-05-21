@@ -14,9 +14,9 @@
     .col-md-4
       /カテゴリ一覧
       .list-group
-        a href="/todos" class="list-group-item" All
+        a href="/todos" class="list-group-item #{@current_category.blank? ? 'active' : ''}" All
         - @categories.each do |category|
-          a href="/todos/#{category}" class="list-group-item"
+          a href="/todos/#{category}" class="list-group-item #{@current_category == category ? 'active' : ''}"
             = category
     .col-md-4
       ul.list-group

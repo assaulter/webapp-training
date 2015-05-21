@@ -44,6 +44,7 @@ class MyApp < Sinatra::Base
 
     @errors = session[:messages]
     @categories = Todo.uniq.pluck(:category)
+    @current_category = category
 
     slim :todos
   end
