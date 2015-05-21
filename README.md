@@ -64,7 +64,7 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 * 煮詰まったら相談（僕でもいいし、互いに教え合ってもいいです）
 
 ## カリキュラム目次
-1. [Hello, World!](https://github.com/assaulter/webapp-training/tree/level1/helloworld)
+1. [Hello, World!](./helloworld)
 2. [画面にプログラムから情報を渡す](https://133.208.22.231/newbies/create-web-app/tree/level1/useslim)
 3. [ActiveRecordを使ったDBの作成](https://github.com/assaulter/webapp-training/tree/level1/activerecord_settings)
 4. [Todoアプリケーションの作成](https://github.com/assaulter/webapp-training/tree/level2/activerecord)
