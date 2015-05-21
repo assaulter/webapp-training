@@ -73,6 +73,9 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 7. [TwitterBootstrapおよびバリデーションの導入](refactor_todo_sample)
 8. [Todoアプリケーションの改修](TASKS.md)
 
+カテゴリの追加タスクを出したので、その[実装例](add_category)
+
+
 番外編：
 スクラム開発体験
 
