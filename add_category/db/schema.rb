@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150521021426) do
   create_table "todos", force: :cascade do |t|
     t.text    "title"
     t.boolean "done"
-    t.string  "tag"
+    t.text    "category"
   end
 
 end
