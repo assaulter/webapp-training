@@ -64,12 +64,14 @@ $ rbenv local ~で、作業するディレクトリのバージョンを固定�
 * 煮詰まったら相談（僕でもいいし、互いに教え合ってもいいです）
 
 ## カリキュラム目次
-1. [Hello, World!](helloworld)
+1. [Hello, World!](hello_world)
 2. [画面にプログラムから情報を渡す](use_slim)
-3. [ActiveRecordを使ったDBの作成](https://github.com/assaulter/webapp-training/tree/level1/activerecord_settings)
-4. [Todoアプリケーションの作成](https://github.com/assaulter/webapp-training/tree/level2/activerecord)
-5. [TwitterBootstrapおよびバリデーションの導入](https://github.com/assaulter/webapp-training/tree/level2/refactor_activerecord)
-6. [Todoアプリケーションの改修](https://github.com/assaulter/webapp-training/blob/master/TASKS.md)
+3. [modularスタイルに変更する](rackup)
+4. [ActiveRecordを使ったDBの作成](activerecord_settings)
+5. [Todoアプリケーションの作成](todo_sample)
+6. [TwitterBootstrapの導入](bootstrap)
+7. [TwitterBootstrapおよびバリデーションの導入](refactor_todo_sample)
+8. [Todoアプリケーションの改修](TASKS.md)
 
 番外編：
 スクラム開発体験
