@@ -1,0 +1,24 @@
+.container
+  h1 俺のTodoリスト
+  form.form-inline action="/todos" method="post"
+    label.control-label for="new-todo" 新しいタスク
+    input.form-control#new-todo type="text" name="title" placeholder="新しいタスク"
+    button class=['btn', 'btn-default'] type="submit" 追加
+  - unless @errors.blank?
+    .alert.alert-danger role="alert"
+      span.glyphicon.glyphicon-exclamation-sign area-hidden="true"
+      - @errors[:title].each do |item|
+        span= item
+  .row
+    .col-md-4
+      ul.list-group
+      - @todos.each do |item|
+        - if item.done
+          li.list-group-item
+            del= item.title
+        - else
+          li.list-group-item
+            form action="/todos/#{item.id}" method="post"
+              span= item.title
+              input type="hidden" name="_method" value="put"
+              button class=['btn', 'btn-success', 'pull-right'] type="submit" 完了
