@@ -14,7 +14,7 @@
 
 ## 更に難易度の高いお題一覧
 * JavaScriptを使い、なるべくロードがないアプリケーションにする
-	* []knockout.jsで作ったサンプル](todo_with_knockoutjs)
+	* [knockout.jsで作ったサンプル](todo_with_knockoutjs)
 * 期限間近のタスクを通知出来る
 	* chrome notification 等
 * Todoを人にアサインできる
