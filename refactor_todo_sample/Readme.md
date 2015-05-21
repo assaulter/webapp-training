@@ -90,8 +90,7 @@ form-inlineと、list-groupを使ってみた
 http://api.rubyonrails.org/classes/ActiveRecord/Migration.html
 
 ## マイグレーションファイルを追加
-//ホントはversion書けるので、同じ名前で違うバージョンの筈（未検討）
-$ bundle exec rake db:create_migration NAME="適当なやつ"
+$ bundle exec rake db:create_migration NAME="add_column"
 
 ## 出来たファイルを編集する
 ```

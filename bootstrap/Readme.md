@@ -1,36 +1,22 @@
-# rackup
-config.ruから起動できるようになった。
-詳細は公式ドキュメントを読む。
-
-http://www.sinatrarb.com/intro-ja.html
-
-これのモジュラーアプリケーションの提供のところ
-
-## ゴール
-![結果](http://i.imgur.com/6tpzzmg.png)
-
-## 毎回再起動めんどくさいのでreloaderを導入
-modular appなので
-```
-class MyApp < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
-...
-end
-```
-
-起動時にdevelopmentを指定する
-```
-$ bundle exec rackup -E development
-```
-
-## ついでにbootstrapを入れてみる
+# TwitterBootstrapを使う
+## ファイル追加
 [bootstrap](http://getbootstrap.com/getting-started/#download)
 
 DLしたやつをpublic配下に設置
 
+## Bootstrap.cssを使う設定
+```
+DOCTYPE
+html
+  head
+    title Using Slim
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link href="/css/bootstrap.min.css" rel="stylesheet"
+  body
+    == yield
+    script src="http://code.jquery.com/jquery.js"
+    script src="js/bootstrap.min.js"
+```
 
-
-## 追加課題
-起動するポート番号を変更する
+cssとjsを使うよう設定し、jqueryも必要なので入れる。
