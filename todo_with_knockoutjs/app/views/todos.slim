@@ -1,0 +1,12 @@
+h1 ToDos
+form action="/todos" method="post"
+  input type="text" name="title"
+  input type="submit" value="追加"
+- @todos.each do |item|
+  - if item.done
+    p style="text-decoration: line-through;" =item.title
+  - else
+    form action="/todos/#{item.id}" method="post"
+      span =item.title
+      input type="hidden" name="_method" value="put"
+      input type="submit" value="完了"

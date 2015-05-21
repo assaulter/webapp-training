@@ -1,0 +1,69 @@
+h1 Todos with knockout.js
+form data-bind="submit: saveTodo"
+  input data-bind="textInput: title"
+  input type="submit" value="追加"
+
+script type="text/html"  id="todo-template"
+  /! ko if: done
+  p style="text-decoration: line-through;" data-bind="text: title"
+  /! /ko
+  /! ko ifnot: done
+  span data-bind="text: title"
+  button data-bind="click: $root.doneTodo" 完了
+  /! /ko
+
+
+div data-bind="template: {name: 'todo-template', foreach: todos}"
+
+javascript:
+  function Todo(data) {
+    this.done = ko.observable(data.done);
+    this.id = ko.observable(data.id);
+    this.title = ko.observable(data.title);
+  }
+  function TodoViewModel() {
+    this.todos = ko.observableArray([]);
+    this.title = ko.observable('');
+    var self = this;
+    $.getJSON("todos.json", function(datas) {
+      var todos = $.map(datas, function(item){return new Todo(item)});
+      self.todos(todos);
+    });
+
+    this.saveTodo = function(elem) {
+      // create json data
+      var data = {
+        title: self.title(),
+        done: false
+      };
+      // send data to server...
+      $.ajax({
+        type: 'post',
+        url: 'todos',
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        dataType: 'json',
+        complete: function(){
+          // add new data to view model
+          self.todos.push(new Todo(data));
+          // clear input text
+          self.title('');
+        }
+      });
+    }
+
+    this.doneTodo = function(data) {
+      // send data to server
+      $.ajax({
+        type: 'post',
+        url: 'todos' + '/' + data.id(),
+        contentType: 'application/json',
+        dataType: 'json',
+        complete: function(){
+          // modify view model element status
+          data.done(true);
+        }
+      });
+    }
+  }
+  ko.applyBindings(new TodoViewModel());
