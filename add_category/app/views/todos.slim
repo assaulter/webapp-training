@@ -3,6 +3,7 @@
   form.form-inline action="/todos" method="post"
     label.control-label for="new-todo" 新しいタスク
     input.form-control#new-todo type="text" name="title" placeholder="新しいタスク"
+    input.form-control#new-todo type="text" name="category" placeholder="カテゴリ名"
     button class=['btn', 'btn-default'] type="submit" 追加
   - unless @errors.blank?
     .alert.alert-danger role="alert"
@@ -10,6 +11,13 @@
       - @errors[:title].each do |item|
         span= item
   .row
+    .col-md-4
+      /カテゴリ一覧
+      .list-group
+        a href="/todos" class="list-group-item" All
+        - @categories.each do |category|
+          a href="/todos/#{category}" class="list-group-item"
+            = category
     .col-md-4
       ul.list-group
       - @todos.each do |item|

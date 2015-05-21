@@ -27,6 +27,23 @@ class MyApp < Sinatra::Base
   get '/todos' do
     @todos = Todo.all
     @errors = session[:messages]
+    @categories = Todo.uniq.pluck(:category)
+
+    slim :todos
+  end
+
+  # カテゴリ毎表示
+  get '/todos/:category' do
+    category = params[:category]
+
+    @todos = Todo.where("category = ?", category)
+
+    if @todos.blank?
+      redirect to('/todos') and return
+    end
+
+    @errors = session[:messages]
+    @categories = Todo.uniq.pluck(:category)
 
     slim :todos
   end
@@ -34,7 +51,7 @@ class MyApp < Sinatra::Base
   # todo追加
   post '/todos' do
     session.clear
-    todo = Todo.create(title: params['title'], done: false)
+    todo = Todo.create(title: params['title'], done: false, category: params['category'])
     session[:messages] = todo.errors.messages
     redirect to('/todos')
   end
