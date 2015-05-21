@@ -1,0 +1,5 @@
+h1 hello, slim
+a href="http://slim-lang.com/" slim-lang.com
+p show users
+- @users.each do |user|
+  p ="id:#{user[:id]}, name:#{user[:name]}"
