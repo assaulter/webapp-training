@@ -1,0 +1,4 @@
+database:
+  development:
+    adapter: sqlite3
+    database: todos.sqlite3

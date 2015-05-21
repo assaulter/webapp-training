@@ -1,0 +1,17 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+gem 'rake'
+
+gem 'sinatra'
+gem 'sinatra-base'
+gem 'sinatra-contrib' # for sinatra/reloader
+gem 'sinatra-activerecord'
+
+gem 'slim'
+gem 'sqlite3'
+
+# テスト関係
+gem 'rspec'
+gem 'factory_girl'
+gem 'rack-test'
